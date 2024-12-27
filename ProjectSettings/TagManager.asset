@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 10puan
+  - 9puan
+  - 8paun
+  - 7puan
+  - 6puan
+  - 5puan
+  - 4puan
+  - TargetZone
+  - Bullet
+  - Target
   layers:
   - Default
   - TransparentFX
@@ -13,8 +23,8 @@ TagManager:
   - UI
   - Target
   - 
-  - 
-  - 
+  - Grab Interactable
+  - Player
   - 
   - 
   - 
