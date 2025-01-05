@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - 10puan
-  - 9puan
-  - 8paun
-  - 7puan
-  - 6puan
-  - 5puan
-  - 4puan
-  - TargetZone
-  - Bullet
-  - Target
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Target
   - 
-  - Grab Interactable
-  - Player
+  - 
+  - 
+  - 
   - 
   - 
   - 

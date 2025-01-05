@@ -38,6 +38,24 @@ public class SimpleShoot : MonoBehaviour
     private int fireSoundCount = 0; // fireSound'un çalınma sayısı
     public int totalScore = 0; // Skor değişkeni
 
+
+    public Transform parentObject; // Üst objenizin Transform referansı
+    public Vector3 movementAmount; // Üst objenin ne kadar hareket edeceği (örneğin, (0, 0.5f, 0))
+
+    // Animation Event tarafından çağrılacak metod
+    public void MoveParentDirectly()
+    {
+        if (parentObject != null)
+        {
+            parentObject.position += movementAmount; // Üst objeyi hareket ettir
+        }
+        else
+        {
+            Debug.LogWarning("Parent Object not assigned!");
+        }
+    }
+
+
     public void AddMagazine(XRBaseInteractable interactable)
     {
         magazine=interactable.GetComponent<Magazine>();
@@ -157,6 +175,7 @@ public class SimpleShoot : MonoBehaviour
         Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
 
     }
+
 
     //This function creates a casing at the ejection slot
     void CasingRelease()

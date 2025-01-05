@@ -12,7 +12,7 @@ public class point4 : MonoBehaviour
 
     void DeductPoints(int DamageAmount)
     {
-        GlobalScore.CurrentScore += DamageAmount;
+        GlobalScore.CurrentScore += 4;
         Debug.Log("Score Updated: " + GlobalScore.CurrentScore + "Eklenen Deðer: " + 4);
     }
 }
